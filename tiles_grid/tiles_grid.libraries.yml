@@ -1,0 +1,12 @@
+tiles_grid:
+  version: 1.x
+  css:
+    theme:
+      # css/tiles_grid.css: {}
+      css/tiles_grid.css: {}
+  js:
+    # js/tiles_grid.js: {}
+    js/tiles_grid.js: {}
+    js/isotope.pkgd.min.js: {}
+  dependencies:
+    - core/jquery

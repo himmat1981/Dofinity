@@ -1,0 +1,23 @@
+uuid: 470adf3a-16ec-4f06-8acd-74ebadad252b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tile_link
+    - node.type.tile
+  module:
+    - link
+id: node.tile.field_tile_link
+field_name: field_tile_link
+entity_type: node
+bundle: tile
+label: 'Tile Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

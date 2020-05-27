@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tile_type
+    - node.type.tile
+  module:
+    - options
+_core:
+  default_config_hash: bjRkdeV_PDQg2wxG_YH8q-wVEDZFtCBbkENWPV6M3hU
+id: node.tile.field_tile_type
+field_name: field_tile_type
+entity_type: node
+bundle: tile
+label: 'Tile type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

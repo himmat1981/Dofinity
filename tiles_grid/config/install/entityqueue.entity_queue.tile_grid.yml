@@ -1,0 +1,25 @@
+uuid: a9bb352c-cb04-4f2a-9cf6-a755cbaaf091
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: tile_grid
+label: 'Tile Grid'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      tile: tile
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

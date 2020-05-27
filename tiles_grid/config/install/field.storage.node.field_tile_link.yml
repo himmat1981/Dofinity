@@ -1,0 +1,19 @@
+uuid: 283d3e25-29bf-4fd1-b0f8-10d0c4e9b6a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_tile_link
+field_name: field_tile_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

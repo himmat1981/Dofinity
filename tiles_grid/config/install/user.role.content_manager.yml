@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_manager
+label: 'Content Manager'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'create article content'
+  - 'create tile content'
+  - 'delete any article content'
+  - 'delete any tile content'
+  - 'delete own article content'
+  - 'delete own tile content'
+  - 'edit any article content'
+  - 'edit any tile content'
+  - 'edit own article content'
+  - 'edit own tile content'

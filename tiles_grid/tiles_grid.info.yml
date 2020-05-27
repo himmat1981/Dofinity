@@ -1,0 +1,8 @@
+name: 'tiles_grid'
+type: module
+description: 'Grid of tiles'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - entityqueue:entityqueue
+  - youtube:youtube

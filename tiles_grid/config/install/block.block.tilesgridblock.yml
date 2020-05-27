@@ -1,0 +1,37 @@
+uuid: 3bebee4d-dd22-4786-a10a-440f3f463e45
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - tiles_grid
+    - user
+  theme:
+    - bartik
+id: tilesgridblock
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: tiles_grid_block
+settings:
+  id: tiles_grid_block
+  label: 'Tiles grid block'
+  provider: tiles_grid
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+      content_manager: content_manager
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

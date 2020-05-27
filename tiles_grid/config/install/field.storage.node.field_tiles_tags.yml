@@ -1,0 +1,20 @@
+uuid: 7aa8cbf8-317f-48dc-bce3-3dfe6492404c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tiles_tags
+field_name: field_tiles_tags
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

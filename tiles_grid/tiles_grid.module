@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Contains tiles_grid.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function tiles_grid_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the tiles_grid module.
+    case 'help.page.tiles_grid':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Grid of tiles') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function tiles_grid_theme() {
+  return [
+    'tiles_grid_block' => [
+      'variables' => ['rows' => []],
+    ],
+  ];
+}
+
+/**
+ * Implements template_preprocess_theme().
+ */
+function template_preprocess_tiles_grid_block(&$variables) {
+
+}

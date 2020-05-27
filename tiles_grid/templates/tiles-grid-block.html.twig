@@ -1,0 +1,50 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+] %}
+<h1>Isotope - filtering</h1>
+
+<div class="button-group filters-button-group">
+  <button class="button  data-filter="*">show all</button>
+  <button class="button" is-checked" data-filter=".article">Article Tile</button>
+  <button class="button" data-filter=".video">Video Tile</button>
+  <button class="button" data-filter=".informative">Informative Tile</button>
+</div>
+
+<div class="grid">
+    {% for value in rows %}
+	    <a href="{{value.tile_link}}">
+	    <div class="element-item {{value.type}} " data-category="{{value.type}}">
+		   {% if value.type == 'article' %}
+			  <div class="text">
+			   <img class="tagicon" width=50 height=50 src="{{ value.tag_icon }}" alt="" />
+			   <img class="tile_image" width=300 height=200 src="{{ value.image_url }}" alt="" />
+			  </div>
+			{% elseif value.type == 'informative' %}
+			  <div class="img">
+				<img class="tagicon" width=50 height=50 src="{{ value.tag_icon }}" alt="" />
+			    <img  src="{{ value.image_url }}" alt="" />
+			  </div>
+		    {% else %}
+			  <div class="img">
+			    <img class="tagicon" width=50 height=50 src="{{ value.tag_icon }}" alt="" />
+			    <a class="use-ajax" data-dialog-type="modal" href="{{ value.video_url}}?width=640&height=480&iframe=true">
+				<img class="videoicon" width=50 height=50 src="{{ value.play_icon }}" alt="" /></a>
+			    <img class="tile_image" width=300 height=200 src="{{ value.image_url }}" alt="" />
+			  </div>
+			{% endif %}
+			<h3 class="name">{{value.title}}</h3>
+			
+       </div>
+	   </a>
+    {% endfor %}
+</div>

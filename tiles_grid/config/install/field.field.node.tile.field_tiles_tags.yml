@@ -1,0 +1,29 @@
+uuid: 56fc7188-b1e4-4f12-935f-549660a4b257
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tiles_tags
+    - node.type.tile
+    - taxonomy.vocabulary.tags
+id: node.tile.field_tiles_tags
+field_name: field_tiles_tags
+entity_type: node
+bundle: tile
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

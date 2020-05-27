@@ -1,0 +1,21 @@
+uuid: 53182a42-39d1-44ec-89e7-e7dc4a62ff6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube_video
+    - node.type.tile
+  module:
+    - youtube
+id: node.tile.field_youtube_video
+field_name: field_youtube_video
+entity_type: node
+bundle: tile
+label: 'Youtube Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube

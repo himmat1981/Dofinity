@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update functions for Tiles Grid.
+ */
+
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Add some terms to the Tags vocabulary.
+ */
+function tiles_grid_install() {
+  // Machine name of the Taxonomy vocabulary.
+  $vocab = 'tags';
+
+  // Term names to be added.
+  $items = [
+    'People',
+    'Food',
+    'Planet',
+  ];
+  foreach ($items as $item) {
+    $term = Term::create([
+      'parent' => [],
+      'name' => $item,
+      'vid' => $vocab,
+    ])->save();
+  }
+}

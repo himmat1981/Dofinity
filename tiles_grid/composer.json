@@ -1,0 +1,13 @@
+{
+    "name": "tiles_grid",
+    "type": "drupal-module",
+    "description": "Grid of tiles",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/tiles_grid",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/tiles_grid",
+        "source": "http://cgit.drupalcode.org/tiles_grid",
+    }
+}
